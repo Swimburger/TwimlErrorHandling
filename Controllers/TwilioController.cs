@@ -7,8 +7,6 @@ namespace TwimlErrorHandling.Controllers;
 [Route("{controller}/{action}")]
 public class TwilioController : Controller
 {
-    //[GenericErrorTwimlMessage]
-    [CatchWithMessageTwiml]
     public IActionResult Message()
     {
         var zero = 0;
@@ -18,8 +16,6 @@ public class TwilioController : Controller
             .ToTwiMLResult();
     }
 
-    //[GenericErrorTwimlVoice]
-    [CatchWithVoiceTwiml]
     public IActionResult Voice()
     {
         var zero = 0;

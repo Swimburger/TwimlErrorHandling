@@ -11,8 +11,7 @@ public static class TwilioEndpoints
         builder.Map("/minimal-voice", OnVoice);
         return builder;
     }
-    
-    [CatchWithMessageTwiml]
+
     private static IResult OnMessage()
     {
         var zero = 0;
@@ -21,8 +20,7 @@ public static class TwilioEndpoints
             .Message($"1/0 is {result}!")
             .ToTwiMLResult();
     }
-    
-    [CatchWithVoiceTwiml]
+
     private static IResult OnVoice()
     {
         var zero = 0;

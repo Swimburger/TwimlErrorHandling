@@ -7,13 +7,9 @@ builder.Services.AddControllers();
 
 var app = builder.Build();
 
-app.UseExceptionHandler("/error");
-
 app.UseHttpsRedirection();
 
 app.UseRouting();
-
-app.MapErrorEndpoint();
 
 app.MapControllers();
 
