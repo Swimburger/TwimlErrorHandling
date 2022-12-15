@@ -49,3 +49,11 @@ public static class ErrorEndpoint
             .ToTwiMLResult();
     }
 }
+
+public class CatchWithMessageTwimlAttribute : Attribute
+{
+}
+
+public class CatchWithVoiceTwimlAttribute : Attribute
+{
+}

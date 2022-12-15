@@ -17,7 +17,7 @@ public class TwilioController : Controller
             .Message($"1/0 is {result}!")
             .ToTwiMLResult();
     }
-    
+
     //[GenericErrorTwimlVoice]
     [CatchWithVoiceTwiml]
     public IActionResult Voice()
@@ -29,4 +29,3 @@ public class TwilioController : Controller
             .ToTwiMLResult();
     }
 }
-

@@ -5,14 +5,6 @@ using Twilio.TwiML;
 
 namespace TwimlErrorHandling;
 
-public class CatchWithMessageTwimlAttribute : Attribute
-{
-}
-
-public class CatchWithVoiceTwimlAttribute : Attribute
-{
-}
-
 internal enum ErrorTwimlType
 {
     Message,
