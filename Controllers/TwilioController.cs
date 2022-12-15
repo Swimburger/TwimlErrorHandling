@@ -4,7 +4,6 @@ using Twilio.TwiML;
 
 namespace TwimlErrorHandling.Controllers;
 
-
 [Route("{controller}/{action}")]
 public class TwilioController : Controller
 {
@@ -18,7 +17,6 @@ public class TwilioController : Controller
             .Message($"1/0 is {result}!")
             .ToTwiMLResult();
     }
-    
     
     //[GenericErrorTwimlVoice]
     [CatchWithVoiceTwiml]
