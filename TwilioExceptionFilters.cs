@@ -11,17 +11,17 @@ internal enum ErrorTwimlType
     Voice
 }
 
-public class GenericErrorTwimlMessage : TypeFilterAttribute
+public class GenericErrorTwimlMessageAttribute : TypeFilterAttribute
 {
-    public GenericErrorTwimlMessage() : base(typeof(GenericErrorTwimlExceptionFilter))
+    public GenericErrorTwimlMessageAttribute() : base(typeof(GenericErrorTwimlExceptionFilter))
     {
         Arguments = new[] {(object) ErrorTwimlType.Message};
     }
 }
 
-public class GenericErrorTwimlVoice : TypeFilterAttribute
+public class GenericErrorTwimlVoiceAttribute : TypeFilterAttribute
 {
-    public GenericErrorTwimlVoice() : base(typeof(GenericErrorTwimlExceptionFilter))
+    public GenericErrorTwimlVoiceAttribute() : base(typeof(GenericErrorTwimlExceptionFilter))
     {
         Arguments = new[] {(object) ErrorTwimlType.Voice};
     }
